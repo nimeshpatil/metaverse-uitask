@@ -1,0 +1,55 @@
+/*----- hero section -----*/
+.hero-section {
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../images/intro-img.jpg);
+    color: $white;
+    display: flex;
+    align-items: center;
+    padding: 24px 0;
+}
+
+
+.section-2{
+    min-height: 800px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../images/bg-2.jpg);
+    color: $white;
+    display: flex;
+    align-items: center;
+    padding: 24px 0;
+
+    .intro-card{
+        background-color: $lightpink;
+        width: 300px;
+        padding: 12px;
+        border-radius: 8px;
+
+        .icon-circle-bg{
+            width: 56px;
+            height: 56px;
+            border-radius: 100%;
+            background-color: $pink;
+    
+            img{
+                width: 32px;
+            }
+        }
+    }
+}
+
+.feature-section {
+    background-color: $gray;
+
+    .feature-icon{
+        width: 60px;
+        color: $blue;
+    }
+
+    .feature-title{
+        font-size: $fs-18;
+        font-weight: $fw-bold;
+    }
+}

@@ -1,0 +1,31 @@
+/*----- font family -----*/
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+$font-family: 'Ubuntu';
+
+/*----- colors -----*/
+
+$blue: #005aff;
+$lightblue: lighten(#005aff, 10);
+$orange: #ffa500;
+$lightorange: lighten(#ffa500, 10);
+$gray: #455065;
+$pink: #fb3dae;
+$lightpink: lighten(#fb3dae, 10);
+$white: #ffffff;
+$black: #000000;
+
+
+/*----- font size -----*/
+
+$fs-60: 60px;
+$fs-48: 48px;
+$fs-32: 32px;
+$fs-24: 24px;
+$fs-18: 18px;
+$fs-16: 16px;
+$fs-14: 14px;
+$fs-12: 12px;
+
+/*----- font weight -----*/
+
+$fw-bold: 700;

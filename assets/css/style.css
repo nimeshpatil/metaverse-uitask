@@ -1,0 +1,169 @@
+/*----- font family -----*/
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+/*----- colors -----*/
+/*----- font size -----*/
+/*----- font weight -----*/
+.header {
+  width: 100%;
+  z-index: 99;
+  padding: 20px 0;
+  background-color: #000000;
+}
+.header.sticky-header {
+  background: rgba(0, 0, 0, 0.6);
+  transition: 0.3s ease;
+}
+@media only screen and (max-width: 767px) {
+  .header {
+    padding: 0px 20px;
+  }
+}
+.header .logo {
+  width: 32px;
+}
+
+.btn {
+  padding: 8px 24px;
+  border-radius: 20px;
+  color: #ffffff;
+}
+@media only screen and (max-width: 576px) {
+  .btn {
+    font-size: 12px;
+  }
+}
+.btn.fill-blue-btn {
+  background-color: #005aff;
+}
+.btn.fill-blue-btn:hover {
+  background-color: #337bff;
+  color: #ffffff;
+}
+.btn.fill-orange-btn {
+  background-color: #ffa500;
+}
+.btn.fill-orange-btn:hover {
+  background-color: #ffb733;
+  color: #ffffff;
+}
+
+body {
+  font-size: 14px;
+  font-family: "Ubuntu";
+}
+
+p {
+  font-size: 16px;
+}
+
+h1,
+h2 {
+  font-size: 60px;
+  font-weight: 700;
+}
+@media only screen and (max-width: 575px) {
+  h1,
+h2 {
+    font-size: 24px;
+  }
+}
+
+h3 {
+  font-size: 48px;
+}
+
+h4 {
+  font-size: 32px;
+}
+
+h6 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #005aff;
+}
+
+.section-lg {
+  padding: 80px 0px;
+}
+@media only screen and (max-width: 575px) {
+  .section-lg {
+    padding: 30px 0px;
+  }
+}
+
+.section-sm {
+  padding: 60px 0px;
+}
+@media only screen and (max-width: 575px) {
+  .section-sm {
+    padding: 20px 0px;
+  }
+}
+
+.footer {
+  min-height: 600px;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../images/footer-bg.jpg);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+}
+.footer .footer-about-img {
+  width: 100%;
+}
+.footer .footer-logo {
+  width: 32px;
+}
+
+/*----- hero section -----*/
+.hero-section {
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../images/intro-img.jpg);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  padding: 24px 0;
+}
+
+.section-2 {
+  min-height: 800px;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../images/bg-2.jpg);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  padding: 24px 0;
+}
+.section-2 .intro-card {
+  background-color: #fc6fc3;
+  width: 300px;
+  padding: 12px;
+  border-radius: 8px;
+}
+.section-2 .intro-card .icon-circle-bg {
+  width: 56px;
+  height: 56px;
+  border-radius: 100%;
+  background-color: #fb3dae;
+}
+.section-2 .intro-card .icon-circle-bg img {
+  width: 32px;
+}
+
+.feature-section {
+  background-color: #455065;
+}
+.feature-section .feature-icon {
+  width: 60px;
+  color: #005aff;
+}
+.feature-section .feature-title {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/*# sourceMappingURL=style.css.map */

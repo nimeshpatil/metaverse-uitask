@@ -1,0 +1,32 @@
+body {
+    font-size: $fs-14;
+    font-family: $font-family;
+}
+p {
+    font-size: $fs-16;
+}
+
+h1
+,h2{
+    font-size: $fs-60;
+    font-weight: $fw-bold;
+    @media only screen and (max-width: 575px) {
+        // &{
+        font-size: $fs-24;
+        // }
+    }
+}
+
+h3{
+    font-size: $fs-48;
+}
+
+h4{
+    font-size: $fs-32;
+}
+
+h6{
+    font-size: $fs-24;
+    font-weight: $fw-bold;
+    color: $blue;
+}
