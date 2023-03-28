@@ -3,6 +3,10 @@
 /*----- colors -----*/
 /*----- font size -----*/
 /*----- font weight -----*/
+/*----- Space -----*/
+/*----- Border Radius -----*/
+/*----- Transition -----*/
+/*----- Media Query Size -----*/
 .header {
   width: 100%;
   z-index: 99;
@@ -24,7 +28,7 @@
 
 .btn {
   padding: 8px 24px;
-  border-radius: 20px;
+  border-radius: 50px;
   color: #ffffff;
 }
 @media only screen and (max-width: 576px) {
@@ -63,7 +67,7 @@ h2 {
 }
 @media only screen and (max-width: 575px) {
   h1,
-h2 {
+  h2 {
     font-size: 24px;
   }
 }
@@ -128,7 +132,7 @@ h6 {
   padding: 24px 0;
 }
 
-.section-2 {
+.changes-society {
   min-height: 800px;
   background-position: center;
   background-size: cover;
@@ -138,19 +142,19 @@ h6 {
   align-items: center;
   padding: 24px 0;
 }
-.section-2 .intro-card {
+.changes-society .intro-card {
   background-color: #fc6fc3;
   width: 300px;
   padding: 12px;
   border-radius: 8px;
 }
-.section-2 .intro-card .icon-circle-bg {
+.changes-society .intro-card .icon-circle-bg {
   width: 56px;
   height: 56px;
-  border-radius: 100%;
+  border-radius: 100px;
   background-color: #fb3dae;
 }
-.section-2 .intro-card .icon-circle-bg img {
+.changes-society .intro-card .icon-circle-bg img {
   width: 32px;
 }
 

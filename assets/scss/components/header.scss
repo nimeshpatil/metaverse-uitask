@@ -1,15 +1,15 @@
 .header{
     width: 100%;
     z-index: 99;
-    padding: 20px 0;
+    padding: $space-20 0;
     background-color: $black;
     &.sticky-header {
         background: rgba(0, 0, 0, 0.6);
-        transition: 0.3s ease;
+        transition: $transition;
     }
-    @media only screen and (max-width:767px)
+    @media only screen and (max-width: $media-size-767)
     {
-        padding:0px 20px;
+        padding:0px $space-20;
     }
 
     .logo{
