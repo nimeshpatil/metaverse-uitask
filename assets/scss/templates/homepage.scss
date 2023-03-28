@@ -1,3 +1,46 @@
+/*----- Element animation -----*/
+.bg-animation{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    .elements{
+        width: 50px;
+        height: 50px;
+        animation: animate 15s linear infinite;
+        animation-duration: calc(125s / var(--i));
+    
+        @media only screen and (max-width: $media-size-576)
+        {
+            width: 20px;
+        }
+        @keyframes animate {
+            0%{
+                transform: translateY(100vh) scale(1);
+            }
+            100%{
+                transform: translateY(0vh) scale(1);
+            }
+        }
+    }
+
+    .ele-1{
+        width: 32px;
+        height: 32px;
+    }
+
+    .ele-2{
+        width: 24px;
+        height: 24px;
+    }
+
+    .ele-3{
+        width: 16px;
+        height: 16px;
+    }
+}
+
+
 /*----- hero section -----*/
 .hero-section {
     min-height: 100vh;
@@ -43,14 +86,44 @@
 .feature-section {
     background-color: $gray;
 
-    .feature-icon{
-        width: 60px;
-        color: $blue;
-    }
+    .feature-card{
+        padding: 24px;
+        transition: $transition;
+        // position: relative;
 
-    .feature-title{
-        font-size: $fs-18;
-        font-weight: $fw-bold;
+        // &::after{
+        //     content: "";
+        //     position: absolute;
+        //     width: 0;
+        //     height: 3px;
+        //     bottom: 0;
+        //     left: 0;
+        //     background-color: $black;
+        //     transition: $transition;            
+        // }
+        &:hover{
+        //     &:after {
+        //         width: 100%;
+        //         transition: $transition;     
+        // }
+            transform: translateY(-10%);
+            background-color: $black;
+        }
+
+        // &:hover{
+        //     transform: translateY(-10%);
+        //     background-color: $black;
+        // }
+
+        .feature-icon{
+            width: 60px;
+            color: $blue;
+        }
+    
+        .feature-title{
+            font-size: $fs-18;
+            font-weight: $fw-bold;
+        }
     }
 }
 

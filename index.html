@@ -5,11 +5,29 @@
     <title>Metaverse</title>
 
     <link rel="stylesheet" href="assets/css/vendors/bootstrap.min.css">
-    <link href="assets/js/vendors/aos.css" rel="stylesheet">
+    <link href="assets/css/vendors/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
+
+    <!----- Ball-Hexagon Animation Start ----->
+    <div class="bg-animation">
+        <img src="./assets/images/Hexagon.png" alt="Hexagon" class="elements ele-1" style="--i:12">
+        <img src="./assets/images/ball.png" alt="Hexagon" class="elements ele-2" style="--i:6">
+        <img src="./assets/images/Hexagon.png" alt="Hexagon" class="elements ele-3" style="--i:3">
+        <img src="./assets/images/ball.png" alt="Hexagon" class="elements ele-" style="--i:4">
+        <img src="./assets/images/Hexagon.png" alt="Hexagon" class="elements" style="--i:13">
+        <img src="./assets/images/ball.png" alt="Hexagon" class="elements ele-1" style="--i:7">
+        <img src="./assets/images/Hexagon.png" alt="Hexagon" class="elements ele-1" style="--i:15">
+        <img src="./assets/images/ball.png" alt="Hexagon" class="elements" style="--i:4">
+        <img src="./assets/images/Hexagon.png" alt="Hexagon" class="elements ele-3" style="--i:5">
+        <img src="./assets/images/ball.png" alt="Hexagon" class="elements ele-1" style="--i:7">
+        <img src="./assets/images/Hexagon.png" alt="Hexagon" class="elements" style="--i:4">
+        <img src="./assets/images/ball.png" alt="Hexagon" class="elements ele 2" style="--i:13">
+        <img src="./assets/images/Hexagon.png" alt="Hexagon" class="elements ele-3" style="--i:7">
+    </div>
+    <!----- Ball-Hexagon Animation End ----->
 
     <!------ header Start ----->
     <header class="header">
@@ -74,7 +92,7 @@
             <Div class="row">
                 <!--- card 1-2 -->
                 <div class="col-md-6">
-                    <div class="intro-card d-flex mb-5">
+                    <div class="intro-card d-flex mb-5" data-aos="fade-up">
                         <div class="icon-circle-bg d-flex align-items-center justify-content-center me-3">
                             <img src="./assets/images/send-icon.svg" alt="icon">
                         </div>
@@ -152,24 +170,32 @@
 
 
     <!----- feature-section start ----->
-    <section class="feature-section section-sm">
+    <section class="feature-section">
         <div class="container">
             <div class="row">
-                <div class="col-md-3 col-6">
-                    <img src="./assets/images/send-icon.svg" alt="icon" class="feature-icon mb-2">
-                    <p class="feature-title text-white">Best Server</p>
+                <div class="col-lg-3 col-6">
+                    <div class="feature-card">
+                        <img src="./assets/images/send-icon.svg" alt="icon" class="feature-icon mb-2">
+                        <p class="feature-title text-white">Best Server</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <div class="feature-card">
+                        <img src="./assets/images/send-icon.svg" alt="icon" class="feature-icon mb-2">
+                        <p class="feature-title text-white">Low Commission</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <div class="feature-card">
+                        <img src="./assets/images/send-icon.svg" alt="icon" class="feature-icon mb-2">
+                        <p class="feature-title text-white">100% Secure</p>
+                    </div>
                 </div>
                 <div class="col-md-3 col-6">
-                    <img src="./assets/images/send-icon.svg" alt="icon" class="feature-icon mb-2">
-                    <p class="feature-title text-white">Low Commission</p>
-                </div>
-                <div class="col-md-3 col-6">
-                    <img src="./assets/images/send-icon.svg" alt="icon" class="feature-icon mb-2">
-                    <p class="feature-title text-white">100% Secure</p>
-                </div>
-                <div class="col-md-3 col-6">
+                    <div class="feature-card">
                     <img src="./assets/images/send-icon.svg" alt="icon" class="feature-icon mb-2">
                     <p class="feature-title text-white">Real Time Monitoring</p>
+                </div>
                 </div>
             </div>
         </div>
@@ -191,8 +217,6 @@
                         <div class="right-side">
                             <h2>PLANS</h2>
                         </div>
-                    </div>
-                </div>
                 <!-- <div class="">
                     <div class="total-content">
                        
@@ -243,8 +267,7 @@
 </div>
 
     </section>
-    <!----- Plans end ----->
-
+    <!----- feature-section end ----->
 
 
     <!----- Footer section start ----->
@@ -284,7 +307,6 @@
 
 
 
-
     <!------------------------------------------------------------------------------------------>
 
 
@@ -294,7 +316,7 @@
     <!-- <script src="assets/font-awsom-icons/vendors/all.js" crossorigin="anonymous"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
-    <script src="/assets/js/vendors/jquery.min.js"></script>
+    <script src="assets/js/vendors/jquery.min.js"></script>
     <script src="assets/js/vendors/homepage-jquery.js"></script>
   
 

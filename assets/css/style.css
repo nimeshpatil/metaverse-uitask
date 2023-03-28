@@ -120,6 +120,45 @@ h6 {
   width: 32px;
 }
 
+/*----- Element animation -----*/
+.bg-animation {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.bg-animation .elements {
+  width: 50px;
+  height: 50px;
+  animation: animate 15s linear infinite;
+  animation-duration: calc(125s / var(--i));
+}
+@media only screen and (max-width: 576px) {
+  .bg-animation .elements {
+    width: 20px;
+  }
+}
+@keyframes animate {
+  0% {
+    transform: translateY(100vh) scale(1);
+  }
+  100% {
+    transform: translateY(0vh) scale(1);
+  }
+}
+.bg-animation .ele-1 {
+  width: 32px;
+  height: 32px;
+}
+.bg-animation .ele-2 {
+  width: 24px;
+  height: 24px;
+}
+.bg-animation .ele-3 {
+  width: 16px;
+  height: 16px;
+}
+
 /*----- hero section -----*/
 .hero-section {
   min-height: 100vh;
@@ -161,11 +200,19 @@ h6 {
 .feature-section {
   background-color: #455065;
 }
-.feature-section .feature-icon {
+.feature-section .feature-card {
+  padding: 24px;
+  transition: 0.3s ease;
+}
+.feature-section .feature-card:hover {
+  transform: translateY(-10%);
+  background-color: #000000;
+}
+.feature-section .feature-card .feature-icon {
   width: 60px;
   color: #005aff;
 }
-.feature-section .feature-title {
+.feature-section .feature-card .feature-title {
   font-size: 18px;
   font-weight: 700;
 }
