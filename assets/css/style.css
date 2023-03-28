@@ -170,4 +170,45 @@ h6 {
   font-weight: 700;
 }
 
+.plans-section {
+  position: relative;
+}
+.plans-section .plans-title {
+  margin-bottom: 200px;
+}
+.plans-section .meta-logo {
+  width: 32px;
+}
+
+.total-content {
+  background: red;
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+}
+.total-content .total {
+  font-size: 16px;
+}
+.total-content .supply {
+  font-size: 12px;
+}
+
+#apDiv1 {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  z-index: 1;
+  left: 553px;
+  top: 37px;
+}
+
+#apDiv9 {
+  position: absolute;
+  width: 128px;
+  height: 127px;
+  z-index: 2;
+  left: 520px;
+  top: 185px;
+}
+
 /*# sourceMappingURL=style.css.map */
