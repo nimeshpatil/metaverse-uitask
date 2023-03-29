@@ -7,6 +7,8 @@
 /*----- Border Radius -----*/
 /*----- Transition -----*/
 /*----- Media Query Size -----*/
+/*----- border Width -----*/
+/*----- border Type -----*/
 .header {
   width: 100%;
   z-index: 99;
@@ -31,7 +33,7 @@
   border-radius: 50px;
   color: #ffffff;
 }
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 575px) {
   .btn {
     font-size: 12px;
   }
@@ -86,24 +88,6 @@ h6 {
   color: #005aff;
 }
 
-.section-lg {
-  padding: 80px 0px;
-}
-@media only screen and (max-width: 575px) {
-  .section-lg {
-    padding: 30px 0px;
-  }
-}
-
-.section-sm {
-  padding: 60px 0px;
-}
-@media only screen and (max-width: 575px) {
-  .section-sm {
-    padding: 20px 0px;
-  }
-}
-
 .footer {
   min-height: 600px;
   background-position: center;
@@ -112,6 +96,7 @@ h6 {
   color: #ffffff;
   display: flex;
   align-items: center;
+  z-index: 99;
 }
 .footer .footer-about-img {
   width: 100%;
@@ -126,6 +111,7 @@ h6 {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  z-index: 9999;
 }
 .bg-animation .elements {
   width: 50px;
@@ -133,7 +119,7 @@ h6 {
   animation: animate 15s linear infinite;
   animation-duration: calc(125s / var(--i));
 }
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 575px) {
   .bg-animation .elements {
     width: 20px;
   }
@@ -190,7 +176,7 @@ h6 {
 .changes-society .intro-card .icon-circle-bg {
   width: 56px;
   height: 56px;
-  border-radius: 100px;
+  border-radius: 100%;
   background-color: #fb3dae;
 }
 .changes-society .intro-card .icon-circle-bg img {
@@ -219,43 +205,106 @@ h6 {
 
 .plans-section {
   position: relative;
-}
-.plans-section .plans-title {
-  margin-bottom: 200px;
+  background-color: #000000;
 }
 .plans-section .meta-logo {
   width: 32px;
 }
-
-.total-content {
-  background: red;
-  width: 300px;
-  height: 300px;
+.plans-section .plans-circle {
+  position: relative;
+  height: 247px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  bottom: -179px;
+}
+.plans-section .plans-circle > div {
+  border: 3px solid #005aff;
+  position: absolute;
   border-radius: 100%;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
 }
-.total-content .total {
-  font-size: 16px;
+.plans-section .plans-circle > div:first-child {
+  border: 0;
 }
-.total-content .supply {
+.plans-section .plans-circle .plans-total {
+  height: 200px;
+  width: 200px;
+  background: #455065;
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+  padding-top: 36px;
+}
+.plans-section .plans-circle .plans-total .total-content span {
+  display: block;
+  line-height: 0.9;
+  text-transform: uppercase;
+}
+.plans-section .plans-circle .plans-total .total-content .number {
+  font-size: 60px;
+}
+.plans-section .plans-circle .plans-total .total-content .supply-text {
+  text-align: right;
   font-size: 12px;
 }
-
-#apDiv1 {
+.plans-section .plans-circle .round-one {
+  height: 300px;
+  width: 300px;
+  animation: rotation 8s infinite linear;
+  z-index: 99;
+}
+.plans-section .plans-circle .round-one span {
+  background: #ffffff;
+  height: 30px;
+  width: 30px;
   position: absolute;
-  width: 64px;
-  height: 64px;
-  z-index: 1;
-  left: 553px;
-  top: 37px;
+  border-radius: 100%;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9;
+  animation: round 8s infinite linear;
+  top: -11px;
+}
+.plans-section .plans-circle .round-two {
+  height: 400px;
+  width: 400px;
+}
+.plans-section .plans-circle .round-three {
+  width: 500px;
+  height: 500px;
 }
 
-#apDiv9 {
-  position: absolute;
-  width: 128px;
-  height: 127px;
-  z-index: 2;
-  left: 520px;
-  top: 185px;
+@keyframes rotation {
+  0% {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes round {
+  0% {
+    transform: rotate(360deg);
+  }
+}
+.section-lg {
+  padding: 80px 0px;
+}
+@media only screen and (max-width: 575px) {
+  .section-lg {
+    padding: 30px 0px;
+  }
+}
+
+.section-sm {
+  padding: 60px 0px;
+}
+@media only screen and (max-width: 575px) {
+  .section-sm {
+    padding: 20px 0px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

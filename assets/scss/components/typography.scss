@@ -10,7 +10,7 @@ h1
 ,h2{
     font-size: $fs-60;
     font-weight: $fw-bold;
-    @media only screen and (max-width: 575px) {
+    @media only screen and (max-width: $media-size-575) {
         font-size: $fs-24;
     }
 }

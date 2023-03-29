@@ -1,15 +1,14 @@
 .section-lg{
     padding: $space-80 0px;
-    @media only screen and (max-width: 575px)
+    @media only screen and (max-width: $media-size-575)
     {
         padding: $space-30 0px;
     }
 }
 .section-sm{
-    padding: 60px 0px;
-    @media only screen and (max-width: 575px)
+    padding: $space-60 0px;
+    @media only screen and (max-width: $media-size-575)
     {
         padding: $space-20 0px;
     }
 }
-

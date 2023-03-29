@@ -2,7 +2,7 @@
     padding: $space-8 $space-24;
     border-radius: $border-radius-50;
     color: $white;
-    @media only screen and (max-width: $media-size-576)
+    @media only screen and (max-width: $media-size-575)
     {
         font-size: $fs-12;
     }

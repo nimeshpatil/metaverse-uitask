@@ -36,16 +36,25 @@ $space-12: 12px;
 $space-20: 20px;
 $space-24: 24px;
 $space-30: 30px;
+$space-36: 36px;
+$space-60: 60px;
 $space-80: 80px;
 
 /*----- Border Radius -----*/
+$border-radius-8: 8px;
 $border-radius-50: 50px;
-$border-radius-100: 100px;
+$border-radius-100: 100%;
 
 /*----- Transition -----*/
 $transition:0.3s ease;
 
 /*----- Media Query Size -----*/
-$media-size-576: 576px;
+$media-size-575: 575px;
 $media-size-767: 767px;
+
+/*----- border Width -----*/
+$border-width-3: 3px;
+
+/*----- border Type -----*/
+$border-solid: solid;
 
